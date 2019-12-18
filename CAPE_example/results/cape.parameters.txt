@@ -9,7 +9,7 @@ eig.which 	 1 2
 pval.correction 	 fdr 
 use.kinship	TRUE
 kinship.type	overall
-pop   2PP
+pop   RIL
 
 #================================================
 # Single Scan Parameters 
