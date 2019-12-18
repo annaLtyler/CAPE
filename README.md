@@ -1,7 +1,7 @@
 # CAPE with example
 
 This repository contains code to run the Combined Analysis of Epistasis and 
-Pleiotropy, or `cape`. This method, described in [1,2] combines information 
+Pleiotropy, or CAPE. This method, described in [1,2] combines information 
 across multiple quantitative traits to infer directed genetic interactions. By 
 combining information across multiple traits, CAPE not only increases power 
 to detect genetic interactions, but also interprets these interactions across 
@@ -31,7 +31,7 @@ The parameters for CAPE are supplied with a parameter file. An example is suppli
 to show the basic format of the file. The parameters specified through the parameter 
 file are as follows:
 
-* **Traits:** Names of traits to be analyzed
+* **Traits** Names of traits to be analyzed
 * **scan.what** Whether to analyze eigentraits or original traits
 * **traits.scaled** Wether to scale traits 
 * **traits.normalized**  Whether to normalize trait
@@ -39,7 +39,7 @@ file are as follows:
 * **pval.correction** What type of p value correction method to use
 * **use.kinship** Wether a kinship correction should be implemented
 * **kinship.type** What type of kinship correction to implement. Either "overall" or "LTCO"
-* **pop**: What type of population is being analyzed:  2PP = two-parent, MPP - multi-parent, RIL = recombinant inbred lines
+* **pop** What type of population is being analyzed:  2PP = two-parent, MPP - multi-parent, RIL = recombinant inbred lines
 * **ref.allele** Which allele to use as the reference allele. Typically this is A, but may be different in a multi-parent population.
 * **singlescan.perm** How many permutations to run for the single-locus scan. This is only to test single-locus
 significance for the user. CAPE does not consider significance when selecting markers for the pair scan.
