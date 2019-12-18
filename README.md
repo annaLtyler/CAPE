@@ -6,7 +6,7 @@ in [@Carter:2012fd]. The method infers directed interaction networks between
 genetic variants for predicting the influence of genetic perturbations on complex 
 traits. This method takes advantage of complementary information in partially 
 pleiotropic genetic variants to resolve directional influences between variants
-that interact epistatically. `cape can be applied to a variety of genetic 
+that interact epistatically. `cape` can be applied to a variety of genetic 
 variants, such as single nucleotide polymorphisms (SNPs), copy number variations 
 (CNVs) or structural variations (SVs). Here we demonstrate the functionality of 
 `cape` by inferring a predictive network between quantitative trait loci (QTL) 
