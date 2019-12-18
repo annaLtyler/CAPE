@@ -26,9 +26,37 @@ in lung after aerosolized lipopolysaccharide (LPS) exposure [pg/ml]
 * **13011** Infectious disease, immune function: H1N1 (PR8) influenza A virus (2x10E3 FFU), 
 median body weight loss day 7 after infection in 9-14 week-old females [\%]
 
-These traits encompass both molecular traits and higher level physiological traits, which is 
-idea
+## Parameters
+The parameters for CAPE are supplied with a parameter file. An example is supplied
+to show the basic format of the file. The parameters specified through the parameter 
+file are as follows:
 
+* **Traits:** Names of traits to be analyzed
+* **scan.what** Whether to analyze eigentraits or original traits
+* **traits.scaled** Wether to scale traits 
+* **traits.normalized**  Whether to normalize trait
+* **eig.which** If eigentraits are being analyzed, which of the eigentraits to use
+* **pval.correction** What type of p value correction method to use
+* **use.kinship** Wether a kinship correction should be implemented
+* **kinship.type** What type of kinship correction to implement. Either "overall" or "LTCO"
+* **pop**: What type of population is being analyzed:  2PP = two-parent, MPP - multi-parent, RIL = recombinant inbred lines
+* **ref.allele** Which allele to use as the reference allele. Typically this is A, but may be different in a multi-parent population.
+* **singlescan.perm** How many permutations to run for the single-locus scan. This is only to test single-locus
+significance for the user. CAPE does not consider significance when selecting markers for the pair scan.
+* **marker.selection.method** The marker selection method to use. Typically top.effects. But from.file can also be used to
+specify specific markers to test.
+* **peak.density** When *marker.selection.method* is top.effects, this parameter indicates how densely to sample 
+markers under effect size peaks. A value of 0.5 indicates that half the markers under an effect size peak will be selected 
+for pairwise testing.
+* **tolerance** How many markers away from the specified number (*num.alelles.in.pairscan*) can be tolerated.
+* **num.alleles.in.pairscan** How many markers should be selected for pairwise testing.
+* **max.pair.cor** The maximum correlation between markers for pairwise testing. Testing markers that are highly
+ correlated may lead to false positives.
+* **pairscan.null.size**  The size of the null distribution to generate for significance testing in the pairwise scan.
+We recommend at least 500k for significance testing.
+
+ 
+ ## References
 
 1. Carter, G. W., Hays, M., Sherman, A. & Galitski, T. Use of pleiotropy to model genetic 
 interactions in a population. PLoS Genet. 8, e1003010 (2012).
