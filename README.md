@@ -11,7 +11,7 @@ variants, such as single nucleotide polymorphisms (SNPs), copy number variations
 (CNVs) or structural variations (SVs). Here we demonstrate the functionality of 
 \texttt{cape} by inferring a predictive network between quantitative trait loci (QTL) 
 in a BXD mouse population assayed for three immune phenotypes. We used
-phenotypes 16320, 10062, and 13011 from GeneNetwork (<www.genenetwork.org>).
+phenotypes 16320, 10062, and 13011 from GeneNetwork (www.genenetwork.org).
 
 The trait descriptions are as follows:
  
