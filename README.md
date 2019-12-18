@@ -2,7 +2,7 @@
 
 This repository contains code to run the Combined Analysis of Epistasis and 
 Pleiotropy, or `cape`. This code implements a method, originally described
-in [@Carter:2012fd]. The method infers directed interaction networks between 
+in [1]. The method infers directed interaction networks between 
 genetic variants for predicting the influence of genetic perturbations on complex 
 traits. This method takes advantage of complementary information in partially 
 pleiotropic genetic variants to resolve directional influences between variants
@@ -27,3 +27,4 @@ median body weight loss day 7 after infection in 9-14 week-old females [\%]
 These traits encompass both molecular traits and higher level physiological traits and
 are moderately correlated.
 
+1. Carter, G. W., Hays, M., Sherman, A. & Galitski, T. Use of pleiotropy to model genetic interactions in a population. PLoS Genet. 8, e1003010 (2012).
