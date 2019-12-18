@@ -26,3 +26,4 @@ median body weight loss day 7 after infection in 9-14 week-old females [\%]
 
 These traits encompass both molecular traits and higher level physiological traits and
 are moderately correlated.
+
