@@ -18,14 +18,8 @@ cape.fun <- list.files(file.path("..", "capempp"), full.names = TRUE)
 for(i in 1:length(cape.fun)){source(cape.fun[i])}
 
 #===============================================================
-# specify parameters
-#===============================================================
-param.file <- here("results", "cape.parameters.txt")
-
-#===============================================================
 # read in data and convert to new cape format
 #===============================================================
-
 old.data.obj <- read.population("CAPE_data.csv", id.col = 1)
 cape.obj <- cape2mpp(old.data.obj)
 

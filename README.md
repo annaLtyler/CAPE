@@ -1,4 +1,4 @@
-# CAPE with example
+# Combined Analysis of Pleiotropy and Epistasis (CAPE)
 
 This repository contains code to run the Combined Analysis of Epistasis and 
 Pleiotropy, or CAPE. This method, described in [1,2] combines information 
